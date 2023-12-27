@@ -1,0 +1,124 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ann-imghash
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/himura/ann-imghash#readme>
+homepage:       https://github.com/himura/ann-imghash#readme
+bug-reports:    https://github.com/himura/ann-imghash/issues
+author:         Takahiro Himura
+maintainer:     taka@himura.jp
+copyright:      2023 Takahiro Himura
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/himura/ann-imghash
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_ann_imghash
+  autogen-modules:
+      Paths_ann_imghash
+  hs-source-dirs:
+      src
+  default-extensions:
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      FunctionalDependencies
+      GADTs
+      LambdaCase
+      MultiWayIf
+      OverloadedLabels
+      OverloadedRecordDot
+      OverloadedStrings
+      PackageImports
+      QuasiQuotes
+      RecordWildCards
+      StrictData
+      TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: GHC2021
+
+executable ann-imghash-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_ann_imghash
+  autogen-modules:
+      Paths_ann_imghash
+  hs-source-dirs:
+      app
+  default-extensions:
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      FunctionalDependencies
+      GADTs
+      LambdaCase
+      MultiWayIf
+      OverloadedLabels
+      OverloadedRecordDot
+      OverloadedStrings
+      PackageImports
+      QuasiQuotes
+      RecordWildCards
+      StrictData
+      TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      ann-imghash
+    , base >=4.7 && <5
+  default-language: GHC2021
+
+test-suite ann-imghash-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_ann_imghash
+  autogen-modules:
+      Paths_ann_imghash
+  hs-source-dirs:
+      test
+  default-extensions:
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      FunctionalDependencies
+      GADTs
+      LambdaCase
+      MultiWayIf
+      OverloadedLabels
+      OverloadedRecordDot
+      OverloadedStrings
+      PackageImports
+      QuasiQuotes
+      RecordWildCards
+      StrictData
+      TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      ann-imghash
+    , base >=4.7 && <5
+  default-language: GHC2021
